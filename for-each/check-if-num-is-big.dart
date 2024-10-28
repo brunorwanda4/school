@@ -6,15 +6,13 @@ void main() {
   List <int> numbers = [];
 
   if (num1 < num2) {
-    while (num2 > num1) {
+    for (num2 ; num2 > num1 ; num2 ++) {
       numbers.add(num2);
-      num2 ++;
-    }
+    };
   }else if (num1 > num2) {
-    while (num2 < num1) {
-      numbers.add(num1);
-      num1 ++;
-    }
+   for (num1 ; num2 < num1 ; num1 ++) {
+      numbers.add(num2);
+    };
   } else {
     print("Numbers are 😡 equal");
   }
