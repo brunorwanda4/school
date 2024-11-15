@@ -11,9 +11,11 @@ int days(int date1 , int date2) {
 }
 
 void main () {
+  stdout.write("enter 1st date:");
   int date1 = int.parse(stdin.readLineSync()!);
+  stdout.write("enter 2end date:");
   int date2 = int.parse(stdin.readLineSync()!);
-
-  print(days(date1, date2));
+  int day=  days(date1, date2);
+  print("days are $day ✅");
 
 }
