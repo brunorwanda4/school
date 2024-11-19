@@ -16,7 +16,9 @@ void main () {
   int itemsMango = int.parse(stdin.readLineSync()!);
 
   TotalPrice totalBanana = TotalPrice(250  , "Banana 🍌" ,itemsBanana);
+  TotalPrice totalMango = TotalPrice(500  , "Mango 🥭" ,itemsMango);
 
 
 totalBanana.total();
+totalMango.total();
 }
